@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: F5EFE6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uap.PenjualanBarangController">
+   <children>
+      <HBox prefHeight="58.0" prefWidth="600.0" style="-fx-background-color: AEBDCA;" />
+      <Label layoutX="10.0" layoutY="20.0" prefHeight="17.0" prefWidth="374.0" text="PENJUALAN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" right="100.0" />
+         </padding>
+      </Label>
+      <Button fx:id="btneditdpb" layoutX="495.0" layoutY="16.0" mnemonicParsing="false" onAction="#openeditdpb" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: F5EFE6;" text="Edit DPB" textAlignment="JUSTIFY" textFill="#aebdca">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnback" layoutX="19.0" layoutY="363.0" mnemonicParsing="false" onAction="#openback" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: F5EFE6;" text="Back" textAlignment="JUSTIFY" textFill="#aebdca">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tbDPB" layoutX="31.0" layoutY="95.0" prefHeight="97.0" prefWidth="539.0">
+         <columns>
+            <TableColumn fx:id="colIDP" prefWidth="164.0" text="Id Penjualan" />
+            <TableColumn fx:id="colBarcode" prefWidth="204.79998779296875" text="Barcode" />
+            <TableColumn fx:id="colStok" prefWidth="170.39996337890625" text="Stok" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tbDPM" layoutX="31.0" layoutY="225.0" prefHeight="97.0" prefWidth="539.0">
+         <columns>
+            <TableColumn fx:id="colIDP1" prefWidth="164.0" text="Id_penjualan" />
+            <TableColumn fx:id="colIDM" prefWidth="204.79998779296875" text="Id Makanan" />
+            <TableColumn fx:id="colStok1" prefWidth="170.39996337890625" text="Stok" />
+         </columns>
+      </TableView>
+      <Button fx:id="btneditdpm" layoutX="409.0" layoutY="16.0" mnemonicParsing="false" onAction="#openeditdpm" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: F5EFE6;" text="Edit DPM" textAlignment="JUSTIFY" textFill="#aebdca">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
